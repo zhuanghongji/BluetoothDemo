@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BluetoothDemo</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="support_bluetooth">支持蓝牙？</string>
+    <string name="is_turn_on">蓝牙打开？</string>
+    <string name="turn_on">打开蓝牙</string>
+    <string name="turn_off">关闭蓝牙</string>
+    <string name="enable_visiblity">打开可见</string>
+    <string name="find_device">查找设备</string>
+    <string name="bonded_device">已绑定设备</string>
+    <string name="listening">等待连接</string>
+    <string name="stop_listening">停止监听</string>
+    <string name="disconnect">断开连接</string>
+    <string name="send_abc">发送abc</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/is_support_blue_tooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="isSupportBlueTooth"
+                android:text="@string/support_bluetooth"/>
+
+            <Button
+                android:id="@+id/is_blue_tooth_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="isBlueToothEnable"
+                android:text="@string/is_turn_on"/>
+
+            <Button
+                android:id="@+id/turn_on_blue_tooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="requestTurnOnBlueTooth"
+                android:text="@string/turn_on"/>
+
+            <Button
+                android:id="@+id/turn_off_blue_tooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="turnOffBlueTooth"
+                android:text="@string/turn_off"/>
+
+            <Button
+                android:id="@+id/enable_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="enableVisibility"
+                android:text="@string/enable_visiblity"/>
+
+            <Button
+                android:id="@+id/find_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="findDevice"
+                android:text="@string/find_device"/>
+
+            <Button
+                android:id="@+id/bonded_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="bondedDevice"
+                android:text="@string/bonded_device"/>
+
+            <Button
+                android:id="@+id/listening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="listening"
+                android:text="@string/listening"/>
+
+            <Button
+                android:id="@+id/stop_listening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="stopListening"
+                android:text="@string/stop_listening"/>
+
+            <Button
+                android:id="@+id/disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="disconnect"
+                android:text="@string/disconnect"/>
+
+            <Button
+                android:id="@+id/send_abc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:onClick="sendABC"
+                android:text="@string/send_abc"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="#bdbdbd">
+
+        <ListView
+            android:id="@+id/device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无连接设备!"
+            android:textSize="24sp"/>
+    </FrameLayout>
+
+</LinearLayout>
